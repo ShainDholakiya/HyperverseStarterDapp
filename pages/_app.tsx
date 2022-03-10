@@ -4,6 +4,8 @@ import { initialize, Provider } from "@decentology/hyperverse";
 import { networks } from "@decentology/hyperverse";
 import { Ethereum } from "@decentology/hyperverse-ethereum";
 
+
+
 function MyApp({ Component, pageProps }: AppProps) {
   const hyperverse = initialize({
     blockchain: Ethereum,
