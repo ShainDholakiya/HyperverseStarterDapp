@@ -1,7 +1,6 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
-import { initialize, Provider } from "@decentology/hyperverse";
-import { networks } from "@decentology/hyperverse";
+import { initialize, Provider, Network } from "@decentology/hyperverse";
 import { Ethereum } from "@decentology/hyperverse-ethereum";
 // import { Metis } from '@decentology/hyperverse-metis';
 // import { Flow } from '@decentology/hyperverse-flow';
@@ -10,7 +9,7 @@ import { Ethereum } from "@decentology/hyperverse-ethereum";
 function MyApp({ Component, pageProps }: AppProps) {
   const hyperverse = initialize({
     blockchain: Ethereum,
-    network: networks.Testnet,
+    network: Network.Testnet,
     modules: [],
   });
   return (
